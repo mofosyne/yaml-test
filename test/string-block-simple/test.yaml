@@ -1,0 +1,8 @@
+string_unquoted: This is a single lined string
+string_quoted: "This is a single lined string"
+literal: |
+    A literal block keeps all
+    new lines.
+folded: >
+    A folded block will get rid
+    of its newlines.
