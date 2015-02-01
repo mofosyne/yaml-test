@@ -1,0 +1,47 @@
+YAML Test
+=========
+
+A Complete Sharable Test Suite for YAML
+
+= Description
+
+This is a comprehensive test suite for YAML. Each test case is a directory
+under the `test/` directory. The `tag/` directory contains subdirectories that
+are "tags" containing symlinks to test cases for that tag.
+
+= File Names
+
+Within a test case there are files that can be used for all sorts of testing:
+
+* Parsing
+* Loading
+* Emitting
+* Dumping
+* Type resolution
+
+The following file names are used:
+
+- `test.yaml`
+
+  This is YAML input file, that is meant to be parsed and/or loaded depending
+  on the test. It can also serve as the canonical output file if no
+  `test.out.yaml` exists.
+
+- `test.json`
+
+  This is a JSON file that contains the equivalent data that the YAML should
+  load into.
+
+- `test.out.yaml`
+
+  This is the YAML that a Dumper or Emitter is expected to produce.
+
+- `test.2.yaml`
+
+  An alternate YAML input file that loads as the same JSON structure.
+
+- `test.event`
+
+  An event syntax, one event per line, that YAML would parse to or emit from.
+
+…more to come…
