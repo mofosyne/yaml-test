@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:ingydotnet/yaml-test.wiki
+	branch = master
+	commit = 92a5393b39d17d7b1fef51e299a854d9211fbd6b
+	parent = 9d11aaf88178b3cafb23a9796da35c6967ad7069
+	cmdver = 0.2.0
