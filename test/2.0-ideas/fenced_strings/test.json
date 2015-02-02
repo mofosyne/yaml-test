@@ -1,0 +1,4 @@
+{
+string_multiline:"This is a multiline \nin yaml source \nit is made up of \nlots of lines",
+string_folded: "This is a multiline in yaml source it is made up of lots of lines"
+}

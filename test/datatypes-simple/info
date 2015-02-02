@@ -1,3 +1,12 @@
+These are the simple data types you will find in json. 
+JSON's Basic Types According to http://en.wikipedia.org/wiki/JSON#Data_types.2C_syntax_and_example is:
+ - Number (No distinction between floats and integer)
+ - String ( "this is a string" )
+ - Boolean ( either [true, false] only)
+ - Array ( ordered list of values )
+ - Object (unordered collections of key:value pairs) 
+ - Null (no objects)
+
 This test was lifted from http://en.wikipedia.org/wiki/YAML#Syntax
 
 
