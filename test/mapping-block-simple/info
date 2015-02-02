@@ -1,0 +1,9 @@
+This test mapping block capability of YAML.
+
+A mapping block, is a set of key:value pairs that looks like .
+
+```
+json: data exchange
+yaml: data serialization
+xml: textual data markup
+```

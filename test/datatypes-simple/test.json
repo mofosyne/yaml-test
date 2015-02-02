@@ -1,0 +1,57 @@
+{
+  "integer": 123,
+  "integer_str": "123",
+  "float_1": 123,
+  "float_2": 123.123,
+  "float_float": 123.123,
+  "float_str": "123.123",
+  "string_1": "123",
+  "string_2": "Yes",
+  "string_3": "Yes we have No bananas",
+  "string_multiline": "This is a multiline\nin yaml source\nit is made up of \nlots of lines\n",
+  "string_folded": "This is a multiline in yaml source it is made up of  lots of lines\n",
+  "bool_true_1": true,
+  "bool_true_2": true,
+  "bool_false_1": false,
+  "bool_false_2": false,
+  "array_1": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "array_2": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "associative_list": {
+    "name": "John Smith",
+    "age": 33
+  },
+  "assoc_array_1": [
+    {
+      "name": "Mary Smith",
+      "age": 27
+    },
+    {
+      "name": "Dan Tith",
+      "age": 23
+    }
+  ],
+  "assoc_array_2": [
+    {
+      "name": "Mary Smith",
+      "age": 27
+    },
+    {
+      "name": "Dan Tith",
+      "age": 23
+    }
+  ],
+  "null": null,
+  "null_str": "null"
+}

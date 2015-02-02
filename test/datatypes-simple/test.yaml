@@ -1,0 +1,88 @@
+# 
+# These are the simple data types you will find in json. 
+# JSON's Basic Types According to http://en.wikipedia.org/wiki/JSON#Data_types.2C_syntax_and_example is:
+#  - Number (No distinction between floats and integer)
+#  - String ( "this is a string" )
+#  - Boolean ( either [true, false] only)
+#  - Array ( ordered list of values )
+#  - Object (unordered collections of key:value pairs) 
+#  - Null (no objects)
+
+
+## Integer
+
+integer: 123                      # an integer/number
+integer_str: "123"                # a string, disambiguated by quotes
+
+
+## Floats
+
+float_1: 123.0                      # a float
+float_2: 123.123                    # a float
+float_float: !!float 123.123      # also a float via explicit data type prefixed by (!!)
+float_str: "123.123"              # a string, disambiguated by quotes. Not a float.
+
+
+## Strings
+
+string_1: !!str 123               # a string, disambiguated by explicit type
+string_2: !!str Yes               # a string via explicit type
+string_3: Yes we have No bananas  # a string, "Yes" and "No" disambiguated by context.
+
+string_multiline: |
+   This is a multiline
+   in yaml source
+   it is made up of 
+   lots of lines
+
+string_folded: >
+   This is a multiline
+   in yaml source
+   it is made up of 
+   lots of lines
+
+## Boolean
+
+bool_true_1: true
+bool_true_2: Yes
+
+bool_false_1: false
+bool_false_2: No
+
+
+### ARRAY ###
+
+array_1: [1,2,3,4,5]              # a array sequence. inline
+
+array_2:                          # a array sequence.  
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  
+### ASSOCIATIVE LISTS (Eqv to object in json) ###
+
+associative_list: {name: John Smith, age: 33}
+
+  
+### ARRAY OF ASSOCIATIVE LISTS ##
+
+assoc_array_1:
+  - name: Mary Smith
+    age: 27
+  - name: Dan Tith
+    age: 23
+
+assoc_array_2:
+  - 
+    name: Mary Smith
+    age: 27
+  - 
+    name: Dan Tith
+    age: 23
+
+### NULL ###
+
+null: null
+null_str: "null"
