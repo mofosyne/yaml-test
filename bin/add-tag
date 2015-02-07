@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
+set -e
+
 main() {
   get-options "$@"
   for tag in "${tags[@]}"; do
-    echo ln -s ../../$test_dir tag/$tag/${test_dir#test/}
+    mkdir -p tag/$tag
+    ln -s ../../$test_dir tag/$tag/${test_dir#test/}
   done
 }
 
