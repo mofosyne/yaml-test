@@ -16,9 +16,39 @@ string_multiline:
    """
    
 string_folded:
-   "
+   '''
    This is a multiline
    in yaml source
    it is made up of 
    lots of lines
-   "
+   '''
+---
+
+edit: replaced the single quote char ", with ', since that is more obvious.
+
+----
+
+# Problems to solve:
+* Indentation level
+* Character semantics
+* Trailing newline or not
+* Which ''' sets the indent
+* What variants throw errors
+* Is trailing ''' needed?
+* Where does leading ''' need to go?
+* Can text be on same line as ''' (Like in Python)
+
+-----
+
+# I think this is an error in current YAML
+# YAML looks at indent of first line
+code: |
+      # comment
+    def foo():
+      pass
+ 
+# This means 2 space indent:
+code: |2
+      # comment
+    def foo():
+      pass
