@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+set -e
+
+main() {
+  get-options "$@"
+  for tag in "${tags[@]}"; do
+    mkdir -p tag/$tag
+    ln -s ../../$test_dir tag/$tag/${test_dir#test/}
+  done
+}
+
+get-options() {
+  [ $# -ge 2 ] ||
+    die "Usage: $0 <test-dir> <tag>..."
+  test_dir="$1"; shift
+  # [ -d "$test_dir" ] && [[ "$d" =~ ^test/[^/]+$ ]] ||
+  [ -d "$test_dir" ] ||
+    die "'$test_dir' should be a test/dir, but does not exist"
+  tags=("$@")
+}
+
+die() { echo "$@" >&2; exit 1; }
+
+[ "$0" != "$BASH_SOURCE" ] || main "$@"

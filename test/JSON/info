@@ -1,2 +1,0 @@
-These test, is gathered from http://json.org/example . And is a good test for designing a minimalistic YAML parser that has just enough feature to still work with JSON.
-
