@@ -4,6 +4,7 @@
 "chomped_string_multiline":"This is a multiline \nin yaml source \nit is made up of \nlots of lines\"\"\"",
 "chomped_string_folded": "This is a multiline in yaml source it is made up of lots of lines\"\"\"",
 "string_multiline_pycomment": "\"\"\"\nmultiline\npython comment\n\"\"\"",
+"string_multiline_pycomment": "\"\"\"\nmultiline\npython comment",
 "string_multiline_implied":"This is a multiline \nin yaml source \nit is made up of \nlots of lines",
 "string_folded_implied": "This is a multiline in yaml source it is made up of lots of lines",
 "string_multiline_spaced": "  This is a multiline \n  in yaml source \n  it is made up of \n  lots of lines",

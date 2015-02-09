@@ -1,0 +1,20 @@
+
+This is an experimental concept, where | and > is replaced by single " and '.
+
+Parser would operate by detecting newline immediately after " or ', and then attempt to locate the first ---- marker, which determines the indent lines, and also the end ---- markers if present. (should it be ===? instead?)
+
+------ OLD STYLE ----
+
+
+This test the ability of YAML to deal with string data
+
+Also test the ability to quote/unquote a string. Also checks if literal or folded blok j
+
+	string_unquoted: This is a single lined string
+	string_quoted: "This is a single lined string"
+	literal: |
+		A literal block keeps all
+		new lines.
+	folded: >
+		A folded block will get rid
+		of its newlines.	
