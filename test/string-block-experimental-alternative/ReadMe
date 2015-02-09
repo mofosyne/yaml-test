@@ -1,7 +1,42 @@
 
 This is an experimental concept, where | and > is replaced by single " and '.
 
-Parser would operate by detecting newline immediately after " or ', and then attempt to locate the first ---- marker, which determines the indent lines, and also the end ---- markers if present. (should it be ===? instead?)
+
+----- Current Concept
+
+To deal with indent detection, when there is lots of spaces initially. Use the backslash plus space char. "\".
+
+To deal with trailing newlines, use optional closing quotes"
+
+https://gist.github.com/anonymous/b3bceb1a98e452256387
+
+----- Discarded concept ----
+
+Parser would operate by detecting newline immediately after " or ', and then attempt to locate the first ==== marker, which determines the indent lines, and also the end ==== markers if present. (should it be ---- instead?)
+
+literal_startmark: "
+====
+    A literal block keeps all
+    new lines.
+
+folded_startmark: '
+====
+    A folded block will get rid
+    of its newlines.
+
+literal_newlines: "
+====
+    A literal block keeps all
+    new lines.
+
+====
+
+folded_newlines: '
+====
+    A folded block will get rid
+    of its newlines.
+
+====
 
 ------ OLD STYLE ----
 
